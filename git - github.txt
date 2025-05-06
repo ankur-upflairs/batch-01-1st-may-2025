@@ -1,0 +1,23 @@
+github - platform to store code
+git - version controll system
+
+to check git version-
+git -v 
+
+configuaring user first time: -
+git config --global user.name "your github username"
+git config --global user.email "your email"
+
+git clone "repository url"
+git add .
+git commit -m "fdkjf"
+git push
+
+
+echo "# test5" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ankur-upflairs/test5.git
+git push -u origin main

@@ -1,0 +1,11 @@
+block :- starts with new line
+            -cover complete screen width
+inline:- does not start with new line
+          - cover width as much as content width
+
+symmetic elements:- they convey a msg with their name that show what is the content 
+header, nav, menu, aside
+p , h1,table
+non-symmetic element:-
+div- block element
+span- inline element
