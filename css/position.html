@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;height: 100px;border: 1px solid;
+        }
+        .rel{background-color: green;
+            position: relative;
+            left: 50px;top: 50px;
+        }
+        .abs{background-color: red;
+        position: absolute;
+        bottom: 0px;right: 0px;
+    }
+    .fix{background-color: yellow;
+        position: fixed;
+        bottom: 0px;left: 0px;
+    }
+    .sticky{background-color: blue;
+        position: sticky;
+        top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <!-- relative , absolute , fixed , sticky -->
+     <div class="box rel"></div>
+     <div class="box abs"></div>
+     <div class="box fix"></div>
+     <div class="box sticky"></div>
+     <div style="height: 1000px;"></div>
+</body>
+</html>
