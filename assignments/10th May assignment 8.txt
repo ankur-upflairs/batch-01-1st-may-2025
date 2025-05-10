@@ -1,0 +1,41 @@
+1. Even or Odd Checker
+Write a Node.js script that takes a number as input and determines whether the number is even or odd using if-else.
+
+2. Positive, Negative, or Zero
+Ask the user to input a number. Use if-else conditions to display whether the number is positive, negative, or zero.
+
+3. Age-based Eligibility
+Prompt the user to enter their age. Use if-else to check if the person is eligible to vote (18 or older). Display a suitable message.
+
+4. Number Range Validator
+Ask the user to input a number. Use if-else to check whether the number lies within the range 10 to 20, inclusive. Display "In range" or "Out of range".
+
+5. Check Number Equality
+Take two numbers from the user. Use if-else to check if both numbers are equal or not. If they are not equal, indicate which one is larger.
+
+6. Simple Grading System
+Write a program that takes a score (0–100) as input and assigns a grade based on the following:
+
+90 and above → Grade A
+
+75–89 → Grade B
+
+50–74 → Grade C
+
+Below 50 → Fail
+
+Use nested or chained if-else statements.
+
+7. Divisibility Checker (5 and 11)
+Prompt the user to input a number. Use if-else to check if it is divisible by both 5 and 11. Show a message based on the result.
+
+8. Find the Largest of Three Numbers
+Take three numbers as input. Use multiple if-else statements to find and print the largest number among them.
+
+9. Leap Year Validator
+Ask the user to enter a year. Use conditions to check whether it is a leap year or not, using the correct logic:
+
+Leap year if divisible by 4, but not by 100, unless also divisible by 400.
+
+10. Vowel or Consonant
+Take a single alphabet character as input from the user. Use if-else to check whether it's a vowel (a, e, i, o, u) or consonant.
