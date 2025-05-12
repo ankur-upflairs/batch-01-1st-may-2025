@@ -37,5 +37,12 @@ let person = {
 // console.log(person.name,person.age)
 //array => it is type of object
 let nums= [23,45,56,'a',true]
-console.log(nums[1])
+// console.log(nums[1])
+const aman = nums.splice(1,2)
+// const newNums = nums.slice(1,3)
+// console.log(newNums)
+// console.log(nums)
+console.log(aman)
+
+
 

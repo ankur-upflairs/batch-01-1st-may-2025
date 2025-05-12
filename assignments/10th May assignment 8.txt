@@ -39,3 +39,6 @@ Leap year if divisible by 4, but not by 100, unless also divisible by 400.
 
 10. Vowel or Consonant
 Take a single alphabet character as input from the user. Use if-else to check whether it's a vowel (a, e, i, o, u) or consonant.
+
+
+
