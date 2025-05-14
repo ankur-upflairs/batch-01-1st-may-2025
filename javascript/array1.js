@@ -19,7 +19,22 @@ let x = [1,2,4,6,7,9]
 // let y= [23,12,2,9]
 // console.log(y.sort((a,b)=>b-a))
 
-
 //take array[6] input name => filter => keep only values that contains /include 'x'
 //sample array(number) => age . check if there is a minor
 //if minor than make two arrays - minor , adults
+let age= [23,12,45,6,89,9]
+if(age.some(v=>v<18)){
+    let minor =age.filter(v=>v<18)
+    let adult =age.filter(v=>v>18)
+    console.log(minor,adult)
+}
+
+
+
+
+
+
+
+
+
+

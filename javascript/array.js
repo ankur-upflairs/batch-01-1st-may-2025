@@ -23,3 +23,4 @@ let b = [3,4,6,7,8]
 // ask user for enter the values of an array than ask to remove the
 // index and value which he wants to replace 
 
+//find the avarage of an array using reduce method

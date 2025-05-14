@@ -1,0 +1,41 @@
+Assignment: Arrays, Strings & Objects
+🔢 Part 1: Arrays (Questions 1–7)
+Create an array of integers and write a function to return the sum of all even numbers in the array.
+
+Write a function that accepts an array of numbers and returns a new array with each number doubled.
+
+Write a function to find the second largest number in an array of integers.
+
+Write a function that removes duplicate elements from an array.
+
+Write a function to rotate an array by k positions to the right.
+
+Write a program to reverse an array in-place (without using built-in .reverse()).
+
+Write a function that takes an array of strings and returns an array of lengths of each string.
+
+🧵 Part 2: Strings (Questions 8–14)
+Write a function that checks whether a string is a palindrome.
+
+Write a function to count the number of vowels and consonants in a given string.
+
+Write a function to capitalize the first letter of each word in a sentence.
+
+Write a function to reverse the words in a sentence (not characters).
+
+Write a function that returns the most frequent character in a string.
+
+Write a function to check if two strings are anagrams of each other.
+
+Write a program to remove all non-alphabetic characters from a string.
+
+📦 Part 3: Objects (Questions 15–19)
+Create a function that takes an object and returns the keys as an array.
+
+Write a function that takes an array of objects and returns only those with a specific property value.
+
+Write a function that merges two objects, with the second object overriding keys of the first if conflicts arise.
+
+Create a function that counts the number of properties in an object.
+
+Write a function that sorts an array of objects by a specified key (e.g., age or name).
