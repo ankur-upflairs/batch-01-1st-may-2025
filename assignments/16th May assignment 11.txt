@@ -1,0 +1,83 @@
+ Assignment: Expense Tracker App (with Local Storage)
+🧩 Objective:
+Build a simple Expense Tracker web application that allows users to add and delete transactions. The app should use Local Storage to persist data between page reloads.
+
+📋 Features to Implement:
+Add Transaction
+
+User can add an income or expense with:
+
+Description (e.g., "Salary", "Grocery")
+
+Amount (positive = income, negative = expense)
+
+Display Transactions List
+
+Show all transactions in a list with description and amount.
+
+Delete Transaction
+
+Each transaction should have a delete (❌) button to remove it.
+
+Balance Summary
+
+Show:
+
+Total Balance
+
+Total Income
+
+Total Expense
+
+Local Storage Support
+
+Save all transactions to Local Storage
+
+Load from Local Storage on page refresh
+
+💡 Technical Guidelines:
+Use HTML, CSS, and JavaScript only (no frameworks required)
+
+Organize your code with functions (e.g., for adding, deleting, loading transactions)
+
+Use meaningful variable names and indentation
+
+🗃️ Local Storage Functions (To Help You Get Started):
+You can use these examples to work with localStorage:
+
+👉 Save to Local Storage:
+js
+Copy
+Edit
+localStorage.setItem('transactions', JSON.stringify(transactions));
+👉 Get from Local Storage:
+js
+Copy
+Edit
+const storedTransactions = JSON.parse(localStorage.getItem('transactions')) || [];
+👉 Delete from Local Storage:
+Just update the list and overwrite it:
+
+js
+Copy
+Edit
+function deleteTransaction(id) {
+  transactions = transactions.filter(txn => txn.id !== id);
+  updateLocalStorage();
+}
+👉 Update Local Storage Function:
+js
+Copy
+Edit
+function updateLocalStorage() {
+  localStorage.setItem('transactions', JSON.stringify(transactions));
+}
+📦 Suggested Folder Structure:
+pgsql
+Copy
+Edit
+expense-tracker/
+│
+├── index.html
+├── style.css
+└── script.js
