@@ -6,17 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">show</button>
+    <button id="btn">show inside paragraph</button>
+    <p> <b>hello</b> every one</p>
+    <button id="btn1" >mouse is out</button>
     <script>
         let button =document.getElementById('btn')
-        let count =0
-        button.addEventListener('click',function(){
-            count++
-            alert(`you clicked a button ${count} times`)
-        })
+        let p = document.querySelector('p')
+        // let count =0
+        // button.addEventListener('click',function(){
+        //     count++
+        //     alert(`you clicked a button ${count} times`)
+        // })
         //mouseenter,mouseleave, dblclick,contextmenu 
         //5 paragraph in html and access them in js apply event on every element
         //using javascript
+        button.addEventListener('click',()=>{
+            // alert(p.innerText)
+            // alert(p.innerHTML)
+            // p.innerText = '<b> paragraph </b> text is changed'            
+            // p.innerHTML= '<b> paragraph </b> text is changed'
+        })
+        let btn1= document.getElementById('btn1')
+        btn1.addEventListener('mouseover',function(){
+            this.innerText='mouse is in'
+        })
+        btn1.addEventListener('mouseout',function(){
+            this.innerText='mouse is out'
+        })
     </script>
 </body>
 </html>
