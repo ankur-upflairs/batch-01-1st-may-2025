@@ -24,3 +24,16 @@ let b = [3,4,6,7,8]
 // index and value which he wants to replace 
 
 //find the avarage of an array using reduce method
+
+// let a= [1,2,3,4] //[2,3,4,1]
+
+// let str = 'hello world'
+
+// for(let i=0;i<str.length;i++){
+//     // [['h',1],['e',1],['l',2]]
+//     let x = {'h':1}
+// }
+// {age:}
+let arr = [{age:3},{age:6},{age:9},{age:2},{age:5}]
+
+arr.sort((a,b)=>a.age-b.age)

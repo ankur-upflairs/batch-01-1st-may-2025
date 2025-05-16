@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="a" onclick="showMsg()" >show msg</button>
+    <button class="a" id="btn">show event click</button>
+    <p>hello</p>
+    <p>world</p>
+    <script>
+        function showMsg(){
+            alert('you clicked')
+        }
+        //dom => document object model
+        //accessing an element 
+        let button = document.getElementById('btn')
+        //selects only one by id
+        console.log(button)
+        let buttons = document.getElementsByClassName('a')
+        console.log(buttons)
+        let buttons1= document.getElementsByTagName('button')
+        console.log(buttons1)
+        let p= document.querySelector('p')
+        console.log(p)
+        let para = document.querySelectorAll('p')
+        console.log(para)
+    </script>
+</body>
+</html>
