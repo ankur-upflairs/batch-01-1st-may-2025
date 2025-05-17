@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>clear timeout</button>
+    <script>
+        let timeoutId=  setTimeout(function(){
+            // alert('timeout called')
+            console.log('timeout')
+        },5000)
+        document.querySelector('button').addEventListener('click',function(){
+            clearTimeout(timeoutId)
+        })
+    //make one buttons -> send .when clicked than button of text is changed with 
+    //stop (timer)//10-9-8
+    // if i click on stop button than it again come to initial text 
+    </script>
+</body>
+</html>
