@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .balance {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .summary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .summary div {
+      padding: 10px;
+      background: #e2e8f0;
+      border-radius: 8px;
+      width: 48%;
+      text-align: center;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    ul li {
+      background: #f8fafc;
+      border-left: 6px solid;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul li.income {
+      border-color: #22c55e;
+    }
+
+    ul li.expense {
+      border-color: #ef4444;
+    }
+
+    ul li button {
+      background: transparent;
+      border: none;
+      color: #ef4444;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Expense Tracker</h2>
+    <div class="balance">
+      Balance: ₹<span id="balance">0.00</span>
+    </div>
+    <div class="summary">
+      <div>
+        Income<br />₹<span id="income">0.00</span>
+      </div>
+      <div>
+        Expense<br />₹<span id="expense">0.00</span>
+      </div>
+    </div>
+    <form id="transaction-form">
+      <div class="form-control">
+        <input type="text" id="text" placeholder="Enter description" required />
+      </div>
+      <div class="form-control">
+        <input type="number" id="amount" placeholder="Enter amount (positive for income, negative for expense)" required />
+      </div>
+      <button type="submit">Add Transaction</button>
+    </form>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script>
+    const balanceEl = document.getElementById('balance');
+    const incomeEl = document.getElementById('income');
+    const expenseEl = document.getElementById('expense');
+    const listEl = document.getElementById('transaction-list');
+    const form = document.getElementById('transaction-form');
+    const textEl = document.getElementById('text');
+    const amountEl = document.getElementById('amount');
+
+    let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+
+    function addTransaction(e) {
+      e.preventDefault();
+
+      const text = textEl.value.trim();
+      const amount = parseFloat(amountEl.value.trim());
+
+      if (text === '' || isNaN(amount)) return;
+
+      const transaction = {
+        id: Date.now(),
+        text,
+        amount
+      };
+
+      transactions.push(transaction);
+      updateLocalStorage();
+      renderTransactions();
+
+      textEl.value = '';
+      amountEl.value = '';
+    }
+
+    function deleteTransaction(id) {
+      transactions = transactions.filter(txn => txn.id !== id);
+      updateLocalStorage();
+      renderTransactions();
+    }
+
+    function renderTransactions() {
+      listEl.innerHTML = '';
+
+      transactions.forEach(txn => {
+        const sign = txn.amount < 0 ? '-' : '+';
+        const cls = txn.amount < 0 ? 'expense' : 'income';
+
+        const item = document.createElement('li');
+        item.classList.add(cls);
+
+        item.innerHTML = `
+          ${txn.text} <span>${sign}₹${Math.abs(txn.amount).toFixed(2)}</span>
+          <button onclick="deleteTransaction(${txn.id})">x</button>
+        `;
+
+        listEl.appendChild(item);
+      });
+
+      updateSummary();
+    }
+
+    function updateSummary() {
+      const amounts = transactions.map(txn => txn.amount);
+
+      const total = amounts.reduce((acc, val) => acc + val, 0);
+      const income = amounts.filter(val => val > 0).reduce((acc, val) => acc + val, 0);
+      const expense = amounts.filter(val => val < 0).reduce((acc, val) => acc + val, 0);
+
+      balanceEl.textContent = total.toFixed(2);
+      incomeEl.textContent = income.toFixed(2);
+      expenseEl.textContent = Math.abs(expense).toFixed(2);
+    }
+
+    function updateLocalStorage() {
+      localStorage.setItem('transactions', JSON.stringify(transactions));
+    }
+
+    form.addEventListener('submit', addTransaction);
+
+    renderTransactions();
+  </script>
+</body>
+</html>

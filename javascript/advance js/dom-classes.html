@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            color: blue;
+        }
+        .c{
+            background-color: tan;
+        }
+        .e{
+            /* font-size: 50px;
+             */
+             display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>working with classes</button>
+    <p class="a b c">hello everyone</p>
+    <script>
+        let p= document.querySelector('p')
+        let btn= document.querySelector('button')
+        // console.log(p.classList)
+        btn.addEventListener('click',function(){
+            p.classList.add('d')
+        })
+         btn.addEventListener('dblclick',function(){
+            p.classList.remove('c')
+        })
+        btn.addEventListener('mouseover',function(){
+            p.classList.toggle('e')
+        })
+        //button => hover =>box visible and if not hove box not visible
+        //click => size of increses and if click again than size of box is norms
+        
+    </script>
+</body>
+</html>

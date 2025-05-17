@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="a b" id="x" title="hello">hello everyone </p>
+    <script>
+        let p = document.querySelector('p')
+        // p.addEventListener('mouseover',function(){
+        //    alert(this.getAttribute('class'))
+        // })
+         p.addEventListener('click',function(){
+        //    this.setAttribute('align','right')
+        this.setAttribute('style','color:red;')
+        })
+    //    console.log( p.hasAttribute('class'))
+    </script>
+</body>
+</html>

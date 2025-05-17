@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{height: 100px;width: 100px;border: 1px solid;border-radius: 50%;}
+</style>
+<body>
+    <button >stop intervel</button>
+    <div class="box"></div>
+    <script>
+        // let count =0
+        // setInterval(function(){
+        //     // console.log('hello')
+        //     console.log(++count)
+        // },1000)
+        let h=100;
+        let w=100;
+        let box= document.querySelector('.box')
+        let intervelId = setInterval(function(){
+            h++;w++;
+            box.style.height=`${h}px`
+            box.style.width=`${w}px`
+            if(h==200 ||  w==200){
+                h=100;w=100;
+            }
+        },10)
+        document.querySelector('button').addEventListener('click',function(){
+            clearInterval(intervelId)
+        })
+        //make two buttons start and stop => that start and stop the rotation of a box (100/100)
+    </script>
+</body>
+</html>
