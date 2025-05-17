@@ -1,0 +1,52 @@
+📘 Assignment: Pomodoro Timer – Countdown with Breaks and Custom Intervals
+Objective:
+Build a Pomodoro Timer web application that helps users manage their work and break sessions efficiently by following the Pomodoro Technique.
+
+🕒 What is the Pomodoro Technique?
+The Pomodoro Technique is a time management method where you:
+
+Work for 25 minutes (called a "Pomodoro")
+
+Take a 5-minute short break
+
+After 4 Pomodoros, take a longer break (15–30 minutes)
+
+✅ Assignment Requirements
+🧩 Features to Implement
+Custom Time Intervals
+
+Allow users to set their own:
+
+Work duration (default: 25 min)
+
+Short break duration (default: 5 min)
+
+Long break duration (default: 15 min)
+
+Number of Pomodoros before a long break (default: 4)
+
+Countdown Timer
+
+Display a real-time countdown for the current session.
+
+Show whether the session is a Work, Short Break, or Long Break.
+
+Start / Pause / Reset Controls
+
+Start: Begins the countdown.
+
+Pause: Pauses the timer.
+
+Reset: Resets the timer to the initial state.
+
+Automatic Transition Between Sessions
+
+After a Pomodoro ends, auto-switch to a break.
+
+After the short breaks and 4 Pomodoros, start a long break.
+
+Visual Indicators
+
+Display which Pomodoro cycle the user is on (e.g., 🔴 🔴 🔴 ⚪ for 3 out of 4 completed).
+
+Highlight the current session.
