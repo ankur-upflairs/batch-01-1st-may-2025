@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //put async keyword before function that is returning promise
+        async function getData(){
+            try{
+            //write await keyword before asynchronous task /fn
+            let res = await fetch('https://dummyjson.com/products')
+            let data = await res.json()
+            // console.log(data)
+            // for handling errors use try -catch 
+            //do whatever u want here with data
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+        getData()
+    </script>
+</body>
+</html>
