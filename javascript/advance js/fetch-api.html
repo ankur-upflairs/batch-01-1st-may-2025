@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // request -> get, post ,put/patch , delete 
+        async function getData(){
+            let res =await fetch('https://jsonplaceholder.typicode.com/posts')
+            let data = await res.json()
+            console.log()
+        }
+        async function sendData() {
+            let res =await fetch('https://jsonplaceholder.typicode.com/posts',
+                {
+                    method:'POST',
+                    body: JSON.stringify({
+                        userId:12,id:112,body:'xyz',title:'abc'
+                    }),
+                    headers:{
+                        "Content-Type": "application/json"
+                    }
+                }
+            )
+            let data = await res.json()
+            console.log(data)
+        }
+        // sendData()
+        
+    </script>
+</body>
+</html>

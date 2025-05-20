@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(Math.SQRT2)
+        // console.log(Math.random())// 0-1 (excluding 1)
+        // console.log(Math.abs(-4))
+        // console.log(Math.ceil(2.3))
+        // console.log(Math.floor(2.9))
+        // console.log(Math.cbrt(125))
+        // console.log(Math.max(34,12,56))
+        // console.log(Math.round(4.6))
+        // console.log(Math.pow(3,5))
+        // make to function to generate b/w 10 -20  using random method 
+        // Math.floor(Math.random() * 11 + 10 )
+        // Date object 
+        let date = new Date() //current date and time 
+        // console.log(date)
+        // console.log(date.getMonth())
+        date.setFullYear(2026)
+        // console.log(date)
+        // let my_date = new Date(2005,10,18)
+        // console.log(my_date)
+        // console.log(Date.now())
+        //question -> make a fn that calculate the execution of another function 
+        //cal(cb_fn) -> millisecond 
+        function calculateTime(func){
+            let start = Date.now()
+            func()
+            let end = Date.now()
+            return end - start 
+        }
+       console.log( calculateTime(()=>{
+        for(let i =0 ;i<10000000;i++){}
+       }))
+
+    </script>
+</body>
+</html>
