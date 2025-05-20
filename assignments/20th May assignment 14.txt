@@ -1,0 +1,106 @@
+📘 JavaScript Assignment: Destructuring, Rest, Spread, Date, Math
+💡 Instructions:
+Answer each question with either an explanation or a code solution.
+
+Run and test your code in a JavaScript environment (e.g., browser console, Node.js, or online JS playground).
+
+Try to understand why each feature works the way it does.
+
+🧩 Section 1: Destructuring (Questions 1–5)
+1. Object Destructuring:
+Given the object:
+
+js
+Copy
+Edit
+const user = { name: "Alice", age: 25, city: "New York" };
+Use destructuring to extract name and age into variables.
+
+2. Array Destructuring:
+Given the array:
+
+js
+Copy
+Edit
+const colors = ["red", "green", "blue"];
+Use array destructuring to assign the first and second colors to variables.
+
+3. Default Values:
+Destructure the object below and give country a default value of "USA" if it's not present.
+
+js
+Copy
+Edit
+const person = { name: "Bob", age: 30 };
+4. Nested Destructuring:
+Use destructuring to extract city from the object:
+
+js
+Copy
+Edit
+const employee = {
+  name: "Eve",
+  address: {
+    city: "Chicago",
+    zip: "60601"
+  }
+};
+5. Swap Variables:
+Use array destructuring to swap the values of a and b:
+
+js
+Copy
+Edit
+let a = 1;
+let b = 2;
+🌀 Section 2: Rest & Spread (Questions 6–10)
+6. Rest Operator in Functions:
+Write a function that takes any number of arguments and returns their sum using the rest operator.
+
+7. Array Spread:
+Combine two arrays using the spread operator:
+
+js
+Copy
+Edit
+const fruits = ["apple", "banana"];
+const berries = ["blueberry", "strawberry"];
+8. Object Spread:
+Merge the two objects using the spread operator:
+
+js
+Copy
+Edit
+const obj1 = { a: 1, b: 2 };
+const obj2 = { b: 3, c: 4 };
+9. Clone an Array:
+Use the spread operator to clone the following array:
+
+js
+Copy
+Edit
+const original = [1, 2, 3];
+10. Function with Rest + Destructuring:
+Write a function that takes a user object and any number of hobbies, and prints the user's name and the hobbies.
+
+🗓️ Section 3: Date (Questions 11–13)
+11. Current Date and Time:
+Write a code snippet to print the current date and time.
+
+12. Extract Year and Month:
+From the current date, extract and print the year and month.
+
+13. Format a Date:
+Create a date object for January 1, 2025, and format it as "2025-01-01".
+
+🧮 Section 4: Math (Questions 14–15)
+14. Random Number:
+Generate a random integer between 1 and 100.
+
+15. Find Max and Min:
+Use the Math object to find the maximum and minimum values in this array:
+
+js
+Copy
+Edit
+const numbers = [23, 89, 4, 56, 12];
