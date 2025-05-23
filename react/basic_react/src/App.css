@@ -1,0 +1,24 @@
+.header{
+    border: 1px solid;
+    width: 80%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    height: 90vh;
+
+}
+
+.content{
+    border: 1px solid;
+    width: 60%;
+}
+
+.side{
+    border: 1px solid;
+    width: 35%;
+}
