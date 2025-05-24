@@ -1,0 +1,14 @@
+Task : - Create a data array with at least 2–3 friends, each having 5 fields:
+
+name
+
+image (url)
+
+hobby
+
+quote
+
+contact
+
+Create a FriendsCard component to display each friend’s details using Bootstrap.
+
