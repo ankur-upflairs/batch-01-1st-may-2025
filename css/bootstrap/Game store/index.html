@@ -1,14 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="w-50 mx-auto mt-3">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container bg-dark-subtle p-5">
+      <div class="banner w-100 border border-white rounded-3 p-5 text-white">
+        <h4 class="pb-3">Welcome To Cyborg</h4>
+        <h1 class="pb-3">
+          Browse Our <br />
+          Popular Games Here
+        </h1>
+        <button class="btn btn-danger rounded-pill px-4 py-2">
+          Browse Now
+        </button>
+      </div>
+      <div class="w-100 mt-5 row justify-content-around">
+        <div class="col-3">
+          <div class="mx-auto bg-dark px-4 py-5 rounded-5">
+            <img class="rounded-5" src="images/popular-01.jpg" alt="" />
+            <div class="row text-white">
+              <p class="col text-white">fortnite</p>
+              <p class="col text-end">
+                <i class="bi bi-star-fill text-warning"></i>4.8
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mx-auto bg-dark px-4 py-5 rounded-5">
+            <img class="rounded-5" src="images/popular-01.jpg" alt="" />
+            <div class="row text-white">
+              <p class="col text-white">fortnite</p>
+              <p class="col text-end">
+                <i class="bi bi-star-fill text-warning"></i>4.8
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mx-auto bg-dark px-4 py-5 rounded-5">
+            <img class="rounded-5" src="images/popular-01.jpg" alt="" />
+            <div class="row text-white">
+              <p class="col text-white">fortnite</p>
+              <p class="col text-end">
+                <i class="bi bi-star-fill text-warning"></i>4.8
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mx-auto bg-dark px-4 py-5 rounded-5">
+            <img class="rounded-5" src="images/popular-01.jpg" alt="" />
+            <div class="row text-white">
+              <p class="col text-white">fortnite</p>
+              <p class="col text-end">
+                <i class="bi bi-star-fill text-warning"></i>4.8
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="w-50 mx-auto mt-3">
         <button class="btn btn-danger rounded-pill px-5 mb-4 ">download</button>
         <button class="btn btn-outline-danger rounded-pill px-5">download</button>
         
@@ -18,6 +143,7 @@
         <div class="col-12 col-md-6 col-lg-3 h  border"></div>
         <div class="col-12 col-md-6 col-lg-3 h  border"></div>
         <div class="col-12 col-md-6 col-lg-3 h border rounded-5"></div>
-    </div>
-</body>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
 </html>
