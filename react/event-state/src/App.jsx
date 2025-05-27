@@ -5,6 +5,7 @@ import './App.css'
 import Events from './Events'
 import States from './States'
 import Form from './Form'
+import Task from './Task'
 
 function App() {
   
@@ -12,8 +13,9 @@ function App() {
   return (
     <>
      {/* <Events /> */}
-     <States />
+     {/* <States /> */}
      <Form />
+     {/* <Task /> */}
     </>
   )
 }
