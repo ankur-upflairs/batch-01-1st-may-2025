@@ -6,16 +6,17 @@ import Events from './Events'
 import States from './States'
 import Form from './Form'
 import Task from './Task'
+import ToDoList from './SimpleTodo'
 
 function App() {
-  
 
   return (
     <>
      {/* <Events /> */}
      {/* <States /> */}
-     <Form />
+     {/* <Form /> */}
      {/* <Task /> */}
+     <ToDoList />
     </>
   )
 }
