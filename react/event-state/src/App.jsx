@@ -7,6 +7,7 @@ import States from './States'
 import Form from './Form'
 import Task from './Task'
 import ToDoList from './SimpleTodo'
+import AdvancedTodo from './AdvanceTodo'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
      {/* <States /> */}
      {/* <Form /> */}
      {/* <Task /> */}
-     <ToDoList />
+     {/* <ToDoList /> */}
+     <AdvancedTodo />
     </>
   )
 }

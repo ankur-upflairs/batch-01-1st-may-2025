@@ -1,0 +1,61 @@
+
+🎯 Objective:
+Build a Packing List App using React. Users should be able to:
+- Add new items to pack
+- Mark them as packed/unpacked
+- Delete items from the list
+
+📝 Requirements:
+
+1. Initial Setup
+Create a new React app using create-react-app or any preferred setup.
+
+2. State Management
+Use the following structure for managing state:
+const [items, setItems] = useState([
+  { id: 1, name: 'Toothbrush', isPacked: false },
+]);
+
+3. UI Features
+- Input field and button to add a new item
+- Render all items with:
+  ✅ Item name
+  ✅ Toggle packed/unpacked status
+  ✅ Delete button
+
+4. Functional Requirements
+- Add new item to the list (with a unique id)
+- Toggle isPacked status on click
+- Delete item from the list
+
+🧠 Hints:
+Use Date.now() to generate simple unique IDs:
+{ id: Date.now(), name: newItem, isPacked: false }
+
+Use .map() to display items
+Use .filter() to delete an item
+Use .map() with conditionals to toggle isPacked
+
+✨ Bonus Challenges (Optional):
+- Add filter view: Show All / Packed / Unpacked
+- Show summary: 3 of 5 items packed
+- Allow inline editing of item name
+- Save data to localStorage
+
+✅ Example Output:
+Input: Socks
+
+Packing List:
+☐ Toothbrush
+☐ Socks
+
+After clicking "Toothbrush":
+✔️ ~Toothbrush~
+☐ Socks
+
+📁 Suggested File Structure (Optional):
+src/
+├── App.jsx
+└── PackingList.jsx  ← You build this component
+
+
