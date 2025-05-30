@@ -1,0 +1,113 @@
+=======================================
+📘 React Assignment: Task Manager App
+=======================================
+
+🎯 Objective:
+-------------
+Build a React application that interacts with the public DummyJSON Todos API to manage tasks. The app should allow users to:
+
+- Fetch all tasks
+- Create a new task
+- Update task completion status
+- Delete a task
+
+📌 API Base: https://dummyjson.com/todos
+
+=======================================
+🚀 Features to Implement
+=======================================
+
+1. View Tasks
+-------------
+- Fetch tasks from https://dummyjson.com/todos
+- Display each task with:
+  - Task title (todo)
+  - Completed status (true/false)
+  - User ID
+
+2. Create Task
+--------------
+- Input form to enter:
+  - Task title
+  - User ID
+- On submit, send POST request to: https://dummyjson.com/todos/add
+- Add the created task to the top of the task list
+
+3. Update Task
+--------------
+- Add checkbox to toggle task's `completed` status
+- On change, send PUT request to: https://dummyjson.com/todos/{id}
+- Update the UI based on the response
+
+4. Delete Task
+--------------
+- Add a Delete button to remove a task
+- On click, send DELETE request to: https://dummyjson.com/todos/{id}
+- Remove the task from the UI on success
+
+=======================================
+🧠 Tech Stack
+=======================================
+- React (Functional Components + Hooks)
+- Axios or Fetch for HTTP requests
+- Optional: TailwindCSS or Bootstrap for UI styling
+
+=======================================
+📁 Suggested Folder Structure
+=======================================
+src/
+├── components/
+│   ├── TaskList.jsx
+│   ├── TaskItem.jsx
+│   └── TaskForm.jsx
+├── App.jsx
+└── index.js
+
+=======================================
+🧪 Sample API Usage
+=======================================
+
+GET all todos:
+--------------
+GET https://dummyjson.com/todos
+
+POST a new task:
+----------------
+POST https://dummyjson.com/todos/add
+Body:
+{
+  "todo": "Do the dishes",
+  "completed": false,
+  "userId": 1
+}
+
+PUT update a task:
+------------------
+PUT https://dummyjson.com/todos/1
+Body:
+{
+  "completed": true
+}
+
+DELETE a task:
+--------------
+DELETE https://dummyjson.com/todos/1
+
+=======================================
+📝 Bonus Features (Optional)
+=======================================
+- Filter tasks by status: All / Completed / Incomplete
+- Search tasks by title
+- Sort by ID or userID
+- Pagination using `skip` and `limit` query parameters
+
+=======================================
+✅ Submission Requirements
+=======================================
+- Push your code to a public GitHub repository
+- Include a README.md file with:
+  - Project description
+  - Setup instructions
+  - Screenshots or demo
+
+=======================================
