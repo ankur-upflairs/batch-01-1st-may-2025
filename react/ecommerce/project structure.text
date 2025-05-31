@@ -1,0 +1,14 @@
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── ProductCard.jsx
+│   └── CartItem.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── ProductDetail.jsx
+│   ├── Cart.jsx
+│   ├── Checkout.jsx
+│   ├── ThankYou.jsx
+│   ├── About.jsx
+│   └── Contact.jsx

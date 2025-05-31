@@ -1,0 +1,82 @@
+===============================
+React Assignment: Weather App
+===============================
+
+🎯 Objective:
+-------------
+Create a Weather App using React that allows users to:
+- Enter a city name
+- Fetch current weather data from the OpenWeather API
+- Display weather details in a user-friendly card
+
+📋 Requirements:
+----------------
+
+Functional:
+-----------
+1. City Search: Input field to type a city name.
+2. API Integration: Use the OpenWeatherMap API to fetch current weather.
+3. Weather Info Display:
+   - City Name
+   - Temperature (in °C)
+   - Weather Condition (e.g., Rain, Clear)
+   - Humidity
+   - Wind Speed
+   - Weather Icon
+
+UI:
+---
+- Clean and responsive layout.
+- Loading indicator while fetching.
+- Handle errors gracefully (e.g., "City not found").
+
+🔧 Tech Stack:
+--------------
+- React (Functional Components)
+- Axios or Fetch API
+- CSS (or Tailwind/Bootstrap - optional)
+
+🛠️ API Setup:
+--------------
+1. Sign up at: https://openweathermap.org
+2. Get your FREE API Key.
+3. Use this endpoint to fetch weather by city name:
+
+   https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+
+📁 Suggested Folder Structure:
+------------------------------
+weather-app/
+│
+├── src/
+│   ├── components/
+│   │   └── WeatherCard.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+├── .env
+
+💡 Bonus Features (Optional):
+-----------------------------
+- Display weather icons
+- Save recent searches
+- Dark/Light theme toggle
+- Auto-detect location using Geolocation API
+
+✅ Success Criteria:
+--------------------
+- Clean and attractive UI
+- API properly integrated and working
+- Good code structure and comments
+- No crashes or errors
+
+📤 Submission Instructions:
+---------------------------
+1. Upload your project to GitHub.
+2. Share the GitHub repo link.
+3. Include a README file with:
+   - Project title and short description
+   - Setup & run instructions
+   - Optional: Screenshots or demo link
+
+Good luck and happy coding! 🚀
