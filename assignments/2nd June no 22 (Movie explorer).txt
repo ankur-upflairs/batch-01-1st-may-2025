@@ -1,0 +1,94 @@
+===========================
+🎓 Assignment: Movie Explorer App using TMDb API
+===========================
+
+📌 Objective:
+-------------
+Build a React application that mimics the "Upcoming Movies" page from the live project:
+https://movie-exp-iota.vercel.app/movies/upcoming
+
+Use the TMDb (The Movie Database) API to fetch and display movie data.
+
+Live Reference Site: https://movie-exp-iota.vercel.app/movies/upcoming  
+GitHub Repo: https://github.com/VyomThaker-2154/Movie-Exp
+
+📦 Features to Implement:
+--------------------------
+
+1. Upcoming Movies Page
+   - Route: `/movies/upcoming`
+   - Fetch data from TMDb "Upcoming" API endpoint
+   - Display movie:
+     - Poster
+     - Title
+     - Release Date
+     - Language
+     - Vote Average
+     - Overview (shortened to 3-4 lines)
+   - Implement pagination or infinite scroll to load more movies
+
+2. Responsive Grid UI
+   - Movie cards in a grid format
+   - Responsive design for mobile, tablet, and desktop
+
+3. (Optional Bonus) Search Bar
+   - Input to search upcoming movies
+   - Use TMDb `/search/movie` endpoint
+
+4. Loading & Error States
+   - Show loading spinner or skeleton during fetch
+   - Show error message or "no results" message if needed
+
+5. (Optional Bonus) Simple Navbar
+   - Navigation between sections like Upcoming, Top Rated, etc.
+
+🔧 Tech Stack:
+---------------
+- React (v18+)
+- React Router
+- Axios or native Fetch API
+- Tailwind CSS or basic CSS/SCSS
+- (Optional) React Infinite Scroll Component
+
+🔐 TMDb API Key Setup:
+-----------------------
+
+1. Create a free account at: https://www.themoviedb.org
+2. Go to: https://developer.themoviedb.org/
+3. Generate a v3 API key (or v4 if preferred)
+4. Add your key to a `.env` file in the root of your project:
+
+   Example:
+REACT_APP_TMDB_API_KEY=your_api_key_here
+
+🌐 TMDb API Reference:
+-----------------------
+- Upcoming Movies Endpoint:
+https://developer.themoviedb.org/reference/movie-upcoming-list
+
+Example:
+
+📁 Suggested Folder Structure:
+------------------------------
+src/
+├── components/
+│   └── MovieCard.jsx
+├── pages/
+│   └── UpcomingMovies.jsx
+├── App.jsx
+├── api.js
+├── index.js
+
+📝 Deliverables:
+----------------
+- Functional React app replicating the upcoming movies page
+- Clean and responsive UI
+- Pagination or infinite scrolling for results
+- Hosted on GitHub or zip file submission
+
+✅ Notes:
+---------
+- Match styling and features of: https://movie-exp-iota.vercel.app/movies/upcoming
+- You may reuse styles from Tailwind or customize your own
+
+Good luck and happy coding! 🎬🚀
