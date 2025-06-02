@@ -1,0 +1,95 @@
+### May 6th - Assignment 5
+
+    make a 5 question -answer website
+### May 7th - Assignment 6
+ card Design in css
+### May 8th - Assignment 7
+ Navbar and a basic template
+### May 10th - Assignment 8
+Conditional Programming Practice:
+
+- Even/Odd Checker
+- Number Range Validator
+- Age-based Eligibility
+- Grading System
+- Leap Year Validator
+### May 12th - Assignment 9
+Loop Programming Practice:
+
+- Basic number loops
+- Even/odd numbers
+- Multiplication tables
+- Factorial calculation
+### May 13th - Assignment 10
+Arrays, Strings & Objects Practice:
+
+- Array manipulation
+- String operations
+- Object handling
+### May 16th - Assignment 11
+Expense Tracker App:
+
+- Add/delete transactions
+- Balance tracking
+- Local Storage implementation
+### May 17th - Assignment 12
+Pomodoro Timer:
+
+- Work/break intervals
+- Custom time settings
+- Session management
+### May 19th - Assignment 13
+Weather App (OpenWeather API):
+
+- City search
+- Weather data display
+- API integration
+### May 20th - Assignment 14
+JavaScript Advanced Concepts:
+
+- Destructuring
+- Rest/Spread operators
+- Date and Math operations
+### May 21st - Major Project 3
+Gaming Site
+
+### May 23rd - Assignment 15
+Basic template in react 
+
+- Converting HTML template to React
+### May 24th - Assignment 16
+Friends Card Component:
+
+- Data array handling
+- Bootstrap integration
+- Component creation
+### May 26th - Assignment 17
+Static To-Do List (without state):
+
+- Task categorization
+- Conditional rendering
+- Static data display
+### May 27th - Assignment 18
+Simple To-Do List (with state):
+
+- useState implementation
+- Input handling
+- List management
+### May 29th - Assignment 19
+Packing List App:
+
+- Add/delete items
+- Toggle packed status
+- State management
+### May 30th - Assignment 20
+Task Manager App:
+
+- DummyJSON API integration
+- CRUD operations
+- Task status management
+### May 31st - Assignment 21
+Weather App (React):
+
+- OpenWeather API integration
+- City-based weather search
+- Weather data display

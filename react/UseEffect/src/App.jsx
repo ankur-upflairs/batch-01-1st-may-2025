@@ -5,7 +5,7 @@ import './App.css'
 import UseEffect from './UseEffect'
 import DataFetching from './DataFetching'
 import Ref from './Ref'
-
+import Context from './Context'
 function App() {
   
 
@@ -13,7 +13,8 @@ function App() {
     <>
     {/* <UseEffect /> */}
     {/* <DataFetching /> */}
-    <Ref />
+    {/* <Ref /> */}
+    <Context />
     </>
   )
 }
