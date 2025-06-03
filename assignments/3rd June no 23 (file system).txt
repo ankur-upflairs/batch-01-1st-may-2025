@@ -1,0 +1,73 @@
+==============================
+Node.js fs Module - Practical Tasks
+==============================
+
+🔰 LEVEL 1: Basic File Operations
+---------------------------------
+
+1. Create a Text File
+----------------------
+- Write a script to create a file named `notes.txt` and write the text: 
+  "This is a note."
+- Optional: Log a success message when done.
+
+2. Read and Display File Content
+---------------------------------
+- Read the content of `notes.txt` and display it in the console.
+
+3. Append Text to a File
+-------------------------
+- Append the line: "This note was updated." at the end of `notes.txt`.
+
+🛠️ LEVEL 2: Conditional and Error Handling
+-------------------------------------------
+
+4. Check if File Exists Before Writing
+---------------------------------------
+- Check if `notes.txt` exists.
+  - If yes, append: "Checked at <current_time>".
+  - If no, create it with the default content.
+
+5. Rename a File
+-----------------
+- Rename `notes.txt` to `updatedNotes.txt`.
+
+6. Delete a File Safely
+-------------------------
+- Delete `updatedNotes.txt` only if it exists.
+- Show a message if it doesn’t exist.
+
+📁 LEVEL 3: Working with Directories
+------------------------------------
+
+7. Create a Folder and Write a File Inside
+-------------------------------------------
+- Create a folder named `logs`.
+- Inside it, create a file `log1.txt` with the content: "Log created".
+
+8. Read All Files in a Folder
+------------------------------
+- List all the files inside the `logs` folder.
+- Print each filename to the console.
+
+🧠 LEVEL 4: Mini Projects
+--------------------------
+
+9. File Logger
+---------------
+- Create a function `logMessage(message)` that:
+  - Creates a folder `logs` if it doesn’t exist.
+  - Creates or appends to a file named `log-YYYY-MM-DD.txt`.
+  - Each message should be logged as:
+    "[HH:MM AM/PM] This is a log message"
+
+10. File Backup Script
+-----------------------
+- Create a script that:
+  - Copies all `.txt` files from a folder named `source` to a folder named `backup`.
+  - Creates the `backup` folder if it doesn’t exist.
+  - Overwrites existing files in `backup` if they exist.
+
+==============================
+End of fs Module Practical Tasks
+==============================
