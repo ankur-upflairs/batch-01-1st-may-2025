@@ -1,0 +1,92 @@
+============================================================
+📘 ASSIGNMENT: PRODUCT MANAGEMENT REST API WITH EXPRESS.JS
+============================================================
+
+🎯 OBJECTIVE:
+Create a RESTful API for managing products using Node.js and Express. 
+This assignment will help you understand route handling, request methods, 
+and basic data flow using Express.
+
+------------------------------------------------------------
+🛠️ REQUIREMENTS:
+------------------------------------------------------------
+
+1️⃣ SETUP PROJECT
+-------------------
+- Initialize a Node.js project:
+    > npm init -y
+
+- Install Express:
+    > npm install express
+
+- Create a file named: 
+    > server.js
+
+- Write your Express app inside `server.js`.
+
+2️⃣ DEFINE ROUTES
+-------------------
+Create the following API routes:
+
+🔹 GET /products  
+    ➤ Return a list of all products.  
+    ➤ Use an in-memory array of product objects.
+
+🔹 POST /products  
+    ➤ Accept new product data in the body.  
+    ➤ Required fields: name, price, category.  
+    ➤ Log the received product data.
+
+🔹 PUT /products/:id  
+    ➤ Update a product with the given ID.  
+    ➤ Log the ID and updated product data.
+
+🔹 DELETE /products/:id  
+    ➤ Delete a product with the given ID.  
+    ➤ Return a confirmation message.
+
+3️⃣ SAMPLE PRODUCT STRUCTURE
+------------------------------
+{
+  id: 1,
+  name: "Laptop",
+  price: 49999,
+  category: "Electronics"
+}
+
+4️⃣ MIDDLEWARE (BONUS)
+------------------------
+➤ Create a middleware to log each incoming request's method and URL.
+
+Example:
+    Incoming request: GET /products
+
+5️⃣ TESTING
+-------------
+➤ Use Postman or curl to test all routes.  
+➤ Create at least 3 product entries and perform all CRUD operations.
+
+------------------------------------------------------------
+📤 SUBMISSION:
+------------------------------------------------------------
+
+- Submit your `server.js` file.
+- Include screenshots or curl command results for testing.
+
+------------------------------------------------------------
+✅ EXAMPLE CURL COMMANDS:
+------------------------------------------------------------
+
+➤ GET all products:
+curl -X GET http://localhost:3000/products
+
+➤ POST a new product:
+curl -X POST http://localhost:3000/products -d "name=Phone&price=9999&category=Electronics" -H "Content-Type: application/x-www-form-urlencoded"
+
+➤ PUT to update a product:
+curl -X PUT http://localhost:3000/products/1 -d "price=8999" -H "Content-Type: application/x-www-form-urlencoded"
+
+➤ DELETE a product:
+curl -X DELETE http://localhost:3000/products/1
+
+============================================================
