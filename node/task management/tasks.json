@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "set up project",
+    "description": "To setup new project of task management",
+    "dueDate": "2025-06-10"
+  },
+  {
+    "id": 2,
+    "title": "Today's assignment",
+    "description": "complete today's assignment till night",
+    "dueDate": "2025-06-6"
+  }
+]
+
