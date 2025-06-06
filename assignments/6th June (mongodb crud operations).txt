@@ -1,0 +1,93 @@
+📘 Assignment: MongoDB CRUD Operations using Shell
+
+🎯 Objective:
+Practice basic CRUD operations using the MongoDB shell (`mongosh`) or MongoDB Compass.
+This assignment is focused on managing a `students` collection inside a `schoolDB` database.
+
+🛠️ Tools:
+- MongoDB Shell (mongosh) or MongoDB Compass
+- Local MongoDB or MongoDB Atlas
+
+📁 Database:   schoolDB
+📁 Collection: students
+
+────────────────────────────────────────────────────
+📌 TASKS
+────────────────────────────────────────────────────
+
+1️⃣ CREATE: Insert at least 5 student documents.
+
+Each document should have the following fields:
+- name (string)
+- age (number)
+- grade (string)
+- subjects (array of strings)
+- isActive (boolean)
+
+🔹 Example:
+db.students.insertOne({
+  name: "Amit Sharma",
+  age: 16,
+  grade: "10th",
+  subjects: ["Math", "Science", "English"],
+  isActive: true
+})
+
+🔹 Insert at least 5 documents with different data.
+
+────────────────────────────────────────────────────
+
+2️⃣ READ: Fetch documents with queries.
+
+🔹 Fetch all students:
+db.students.find()
+
+🔹 Students in grade "10th":
+db.students.find({ grade: "10th" })
+
+🔹 Students who have "Math" as a subject:
+db.students.find({ subjects: "Math" })
+
+🔹 Active students only:
+db.students.find({ isActive: true })
+
+────────────────────────────────────────────────────
+
+3️⃣ UPDATE: Modify existing documents.
+
+🔹 Update age of student named "Amit Sharma" to 17:
+db.students.updateOne(
+  { name: "Amit Sharma" },
+  { $set: { age: 17 } }
+)
+
+🔹 Add subject "Computer" to student named "Amit Sharma":
+db.students.updateOne(
+  { name: "Amit Sharma" },
+  { $push: { subjects: "Computer" } }
+)
+
+────────────────────────────────────────────────────
+
+4️⃣ DELETE: Remove documents.
+
+🔹 Delete student named "Amit Sharma":
+db.students.deleteOne({ name: "Amit Sharma" })
+
+🔹 Delete all inactive students:
+db.students.deleteMany({ isActive: false })
+
+────────────────────────────────────────────────────
+
+📦 SUBMISSION:
+✔ Screenshots of your shell or Compass output for:
+   - Insert
+   - Read
+   - Update
+   - Delete
+
+✔ Mention whether you used local MongoDB or Atlas (cloud).
+
+
+
+Happy Learning! 🚀

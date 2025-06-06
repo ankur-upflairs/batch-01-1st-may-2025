@@ -1,0 +1,60 @@
+sql            mongodb
+
+database     	database  
+Table  		collection
+Row		document
+columns		fields
+mongodb => json like format 
+use testing
+show dbs
+db.createCollection('products')
+ db.details.insertOne({name:"sunil"})
+ show collections
+db.products.insertOne({
+     "id": 1,
+     "name": "Wireless Mouse",
+     "description": "Ergonomic wireless mouse with USB receiver.",
+     "price": 899,
+     "category": "Electronics",
+     "inStock": true,
+     "rating": 4.5,
+     "brand": "Logitech",
+     "image": "https://example.com/images/mouse.jpg"
+   })
+
+db.products.insertMany([...])
+db.products.find({})
+db.products.find({id:1})
+db.products.deleteOne({id:5})
+db.products.deleteMany({id:1})
+ db.products.countDocuments()
+ db.products.updateOne({id:2},{$set:{brand:"boat"}})
+
+
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse with USB receiver.",
+    "price": 899,
+    "category": "Electronics",
+    "inStock": true,
+    "rating": 4.5,
+    "brand": "Logitech",
+    "image": "https://example.com/images/mouse.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bluetooth Headphones",
+    "description": "Over-ear noise cancelling headphones with long battery life.",
+    "price": 2499,
+    "category": "Electronics",
+    "inStock": true,
+    "rating": 4.3,
+    "brand": "Sony",
+    "image": "https://example.com/images/headphones.jpg"
+  }
+]
+
+
+
