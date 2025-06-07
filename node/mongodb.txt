@@ -29,7 +29,12 @@ db.products.deleteOne({id:5})
 db.products.deleteMany({id:1})
  db.products.countDocuments()
  db.products.updateOne({id:2},{$set:{brand:"boat"}})
+db.products.updateOne({id:5},{$set:{brand:"boat"}},{upsert:true})
 
+< $lt , > $gt , == $eq ,!= $ne 
+db.products.find({rating:{$ne:4}})
+{$and:[{price:{$gt:10}},{price:{$lt:80}}]}
+{$or:[{price:{$lt:20}},{price:{$gt:80}}]}
 
 [
   {
