@@ -1,0 +1,51 @@
+📘 Assignment: Student Records API with Express & Mongoose
+
+🎯 Objective:
+Build a backend CRUD API to manage student records using Express.js and MongoDB (with Mongoose).
+
+📝 Requirements:
+Create an Express.js application with the following features:
+
+📦 Student Schema (Mongoose):
+- name: String (required)
+- rollNo: Number (required, unique)
+- courses: [String] (at least 1)
+- GPA: Number (0.0 - 4.0)
+
+🛠️ API Endpoints:
+
+1. 📥 Create a new student
+   - Method: POST
+   - Route: `/api/students`
+   - Body: `{ name, rollNo, courses, GPA }`
+
+2. 📄 Get all students
+   - Method: GET
+   - Route: `/api/students`
+
+3. 🔍 Get a student by roll number
+   - Method: GET
+   - Route: `/api/students/:rollNo`
+
+4. ✏️ Update a student by roll number
+   - Method: PUT
+   - Route: `/api/students/:rollNo`
+   - Body: Any updatable fields (name, courses, GPA)
+
+5. ❌ Delete a student by roll number
+   - Method: DELETE
+   - Route: `/api/students/:rollNo`
+
+✅ Bonus Tasks:
+- Add validation to ensure GPA is between 0.0 and 4.0
+- Sort students by GPA in descending order when fetching all
+- Implement pagination using `?page=1&limit=10`
+
+📂 Project Structure (suggested):
+student-records-api/
+├── models/
+│ └── Student.js
+├── routes/
+│ └── students.js
+├── app.js
+├── package.json
