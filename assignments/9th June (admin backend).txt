@@ -1,0 +1,1 @@
+Task - all possible api routes for admin with considering (previous student record management app)
