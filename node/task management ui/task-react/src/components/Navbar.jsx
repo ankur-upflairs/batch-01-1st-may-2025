@@ -7,7 +7,7 @@ function Navbar() {
     <ul>
       <li><Link to={'/'}>Home</Link></li>
       <li><Link to={'/addtask'}>Add Task</Link></li>
-      <li><Link href="view.html">View Tasks</Link></li>
+      <li><Link to={'/viewtask'}>View Tasks</Link></li>
     </ul>
   </nav>
   )

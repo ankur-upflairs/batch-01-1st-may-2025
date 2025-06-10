@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import axios from "axios";
 
-let formatDate = (date)=>{
+export let formatDate = (date)=>{
     let d = new Date(date)
     return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`
 }
