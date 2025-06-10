@@ -1,0 +1,89 @@
+📘 Assignment: Backend API for Learning Management System (LMS)
+
+🎯 Objective:
+Create a backend RESTful API using **Express.js** and **Mongoose** to manage the following entities:
+- 📚 Courses
+- 📄 Assignments
+- 👤 Users
+
+🔧 Tech Stack:
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+
+📦 Mongoose Schemas (Suggested):
+
+1. 🧑‍🎓 User
+```js
+{
+  name: String,
+  email: String,
+  role: { type: String, enum: ['student', 'admin'], default: 'student' }
+}
+📚 Course
+
+js
+Copy
+Edit
+{
+  title: String,
+  description: String
+}
+📄 Assignment
+
+js
+Copy
+Edit
+{
+  courseId: mongoose.Schema.Types.ObjectId,
+  title: String,
+  content: String,
+  dueDate: Date
+}
+🛠️ Required CRUD Endpoints:
+
+👤 Users
+POST /api/users – Create a user
+
+GET /api/users – Get all users
+
+GET /api/users/:id – Get user by ID
+
+PUT /api/users/:id – Update user
+
+DELETE /api/users/:id – Delete user
+
+📚 Courses
+POST /api/courses – Create a course
+
+GET /api/courses – Get all courses
+
+GET /api/courses/:id – Get course by ID
+
+PUT /api/courses/:id – Update course
+
+DELETE /api/courses/:id – Delete course
+
+📄 Assignments
+POST /api/assignments – Create an assignment (linked to a course)
+
+GET /api/assignments – Get all assignments
+
+GET /api/assignments/:id – Get assignment by ID
+
+PUT /api/assignments/:id – Update assignment
+
+DELETE /api/assignments/:id – Delete assignment
+
+lms-backend/
+├── models/
+│   ├── User.js
+│   ├── Course.js
+│   └── Assignment.js
+├── routes/
+│   ├── users.js
+│   ├── courses.js
+│   └── assignments.js
+├── app.js
+├── .env
+└── package.json
