@@ -5,8 +5,8 @@ function Navbar() {
     <nav>
     <h1>Task Manager</h1>
     <ul>
-      <li><Link href="index.html">Home</Link></li>
-      <li><Link href="add.html">Add Task</Link></li>
+      <li><Link to={'/'}>Home</Link></li>
+      <li><Link to={'/addtask'}>Add Task</Link></li>
       <li><Link href="view.html">View Tasks</Link></li>
     </ul>
   </nav>
@@ -14,3 +14,5 @@ function Navbar() {
 }
 
 export default Navbar
+
+

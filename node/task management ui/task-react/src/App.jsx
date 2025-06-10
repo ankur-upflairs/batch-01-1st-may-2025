@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Routes ,Route} from 'react-router'
 import Home from './pages/Home'
+import AddTask from './pages/AddTask'
 
 function App() {
   
@@ -13,6 +14,8 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/addtask' element={<AddTask />} />
+
     </Routes>
     </BrowserRouter>
       
