@@ -1,0 +1,11 @@
+session ->
+login credentials (check) ->generate session {id:123,user:xyz}->save on server ->send it browser(cookies)->save
+re-request with cookies -> match sessionid->auth /not auth
+--------------------------
+token ->
+login credentials (check) ->generate token (secret_key) {id:123,user:xyz} ->send it browser ->save
+re-request with token -> match token ->auth /not auth
+
+=> hash value => non reverseval process 
+
+
