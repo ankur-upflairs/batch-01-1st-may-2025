@@ -1,0 +1,73 @@
+Assignment Title: Add Authentication and Protect Routes in LMS
+
+Objective:
+Enhance the existing Learning Management System (LMS) project by implementing a basic authentication system and protecting private routes for logged-in users only.
+
+Tech Stack:
+- Frontend: React (useState, useContext, axios)
+- Backend: Express
+- Database: MongoDB
+
+Tasks:
+
+1. Backend - Authentication API:
+--------------------------------
+✅ Create the following routes:
+- `POST /api/auth/register` → Register a new user (only email & password)
+- `POST /api/auth/login` → Login with email & password, return JWT token
+
+✅ Create middleware:
+- `authMiddleware` → To verify JWT from `Authorization` header and attach user to the request object
+
+✅ Protect routes:
+- Ensure the following routes are protected using `authMiddleware`:
+    - `POST /api/courses`
+    - `POST /api/assignments`
+    - Any route that creates or modifies data
+
+✅ Use libraries:
+- `jsonwebtoken`
+- `bcryptjs`
+- `dotenv`
+
+2. Frontend - Authentication UI:
+--------------------------------
+✅ Create pages/components:
+- `LoginPage` → Form for email & password, on success store token
+- `RegisterPage` → Form for email & password, register the user
+
+✅ Manage Authentication:
+- Use `AuthContext` to manage login state (token, user info)
+- Save token in `localStorage`
+- Create a `PrivateRoute` component that only renders children if the user is logged in
+
+✅ Protect Routes:
+- `/dashboard`, `/courses/create`, `/assignments/create` → Should only be accessible after login
+
+✅ Use Axios Interceptors:
+- Automatically attach JWT token to all API requests if available
+
+3. Extra Credit (Optional):
+---------------------------
+- Implement logout functionality
+- Show user email on dashboard after login
+- Add role-based access (Admin/User) and protect some routes based on role
+
+Deliverables:
+-------------
+- Updated LMS project with working login/register system
+- Private routes with authentication guard
+- Postman collection to test backend routes (optional)
+- README file with setup and login instructions
+
+Deadline:
+---------
+📅 Submit your updated project by **[Insert Date Here]**
+
+Evaluation Criteria:
+--------------------
+- Working login/register with validation
+- Route protection on both frontend & backend
+- Clean, modular code with proper use of context/hooks
+- Bonus: Role-based access & logout feature
+
