@@ -2,8 +2,11 @@ const Course = require('../models/courseModel');
 
 // Create new course
 exports.createCourse = async (req, res) => {
+  // console.log(req.body, req.file)
+  const path = req.file.filename
   try {
-    const course = await Course.create(req.body);
+
+    const course = await Course.create({...req.body,image:path});
     res.status(201).json({ message: 'Course created', course });
   } catch (err) {
     res.status(400).json({ error: 'Failed to create course', details: err.message });

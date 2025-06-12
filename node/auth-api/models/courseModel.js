@@ -4,7 +4,8 @@ const courseSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: String,
   instructor: String,
-  createdAt: { type: Date, default: Date.now }
-});
+  image:String,
+ 
+},{timestamps:true});
 
 module.exports = mongoose.model('Course', courseSchema);

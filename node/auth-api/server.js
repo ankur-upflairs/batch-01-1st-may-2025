@@ -3,10 +3,12 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
 const courseRoutes = require('./routes/courses')
-
+const path = require('path')
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({extended:false}))
+app.use(express.static(path.join(__dirname,'uploads/')))
 
 mongoose.connect(process.env.MONGO_URI).then(() => console.log('MongoDB connected'))
   .catch(err => console.error(err));
