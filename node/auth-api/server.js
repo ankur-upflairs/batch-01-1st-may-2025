@@ -4,8 +4,10 @@ const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
 const courseRoutes = require('./routes/courses')
 const path = require('path')
+const cors = require('cors')
 dotenv.config();
 const app = express();
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 app.use(express.static(path.join(__dirname,'uploads/')))
