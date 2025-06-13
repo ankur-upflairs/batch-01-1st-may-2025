@@ -8,7 +8,7 @@ function CreateCourse() {
     instructor: "",
     image: null,
   });
-  
+
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === "image") {
@@ -35,7 +35,14 @@ function CreateCourse() {
         //     },
         //     body:data
         // })
-      const response = await axios.post('http://localhost:5000/api/course', data);
+        let token = localStorage.getItem('token')
+      const response = await axios.post('http://localhost:5000/api/course', data,
+        {
+            headers:{
+                Authorization: `Bearer ${token}`
+            }
+        }
+      );
       alert('Course created successfully!');
       console.log(response.data);
     } catch (error) {

@@ -5,7 +5,7 @@ const {authenticate, authorize} = require('../middlewares/authMiddleware')
 const {upload} = require('../middlewares/multerSetup')
 
 // CRUD routes
-router.post('/',upload.single('image'), courseController.createCourse);
+router.post('/',authenticate ,upload.single('image'), courseController.createCourse);
 router.get('/', authenticate,authorize('admin','user'), courseController.getAllCourses);
 router.get('/:id',authenticate, courseController.getCourseById);
 router.put('/:id',authenticate,authorize('admin'), courseController.updateCourse);
